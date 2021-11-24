@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastre-se</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/letterg.ico">
+
+</head>
+<!---------------------------NavBar---------------------------------->
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fundo-nav">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/letterg.ico" width="30" height="30" class="d-inlite-block align-top" alt="">
+            Game Mania
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos</a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../subpaginas/ninpage.html">Nintendo</a>
+                        <a class="dropdown-item" href="../subpaginas/pspage.html">Playstation</a>
+                        <a class="dropdown-item" href="../subpaginas/xboxpage.html">Xbox</a>
+                        <a class="dropdown-item" href="../subpaginas/pcpage.html">Computadores</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quem Somos</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+            <li class="nav-item">
+                <a class="btn btn-primary" href="../cadastro/login.html" role="button">Login</a>
+                <a class="btn btn-primary" href="../cadastro/formulario.html" role="button">Sign In</a>
+            </li>
+        </div>
+    </nav>
+
+
+    <!-------------------------------------Cabeçalho----------------------------------------->
+
+    <header>
+        <div class="texto-header">
+            <img style="margin-top: 1%;" width="210px" height="170px" src='imagens/gamemania2.png'/>
+             <div id="slider"><img src="imagens/mario2.gif" width="30" height="50"></div>
+            <h1 style="color: rgb(246, 9, 9)">Game Mania</h1>
+            <p style="color: seashell; font-size: larger;">A maior loja de eletrônicos da grande São Paulo</p>
+        </div>
+    </header>
+
+    <main>
+        <div style="background-color: rgba(0, 0, 0, 0.582); padding: 15px; border: 20px solid blue; width: 480px;;">
+        <form name="meu_form">
+
+            <h2 style="color: blanchedalmond;">Formulario Para Cadastro</h2>
+    
+            <input type="text" id="nomeid" placeholder="Pedro" required="required" name="nome" />
+            <label for="nome">Nome</label>
+    
+            <input type="text" id="sobreid" placeholder="Carvalho" required="required" name="nome" />
+            <label for="nome">Sobrenome</label>]
+            
+            <input type="number" id="ageid" placeholder="19" name="number" />
+            <label for="number">Idade</label>
+    
+            <input type="email" id="emailid" placeholder="beltrano@gmail..." name="email" required="required"/>
+            <label for="email">Email</label>
+
+            <input type="text" id="cepid" placeholder="07458-620" name="text" required="required"/>
+            <label for="text">Cep</label>
+    
+            <input type="text" id="teleid" placeholder="(11)99758-4653" required="required" name="Telefone" />
+            <label for="telefone">Telefone</label>
+    
+            <br><br><input type="submit" class="enviar" onclick="Enviar();" value="Enviar" style="background-color: rgb(206, 63, 63);" />
+        </form></div>
+    </main>
+
+    <footer>
+        <div class="texto-header">
+
+            <img src="imagens/what.png" class="sitero">
+            <img src="imagens/book.png" class="sitero">
+            <img src="imagens/twi.png" class="sitero">
+            <img src="imagens/insta.png" class="sitero">
+            <img src="imagens/email.png" class="sitero">
+            <br><br>
+            <h3 style="color: aliceblue;">Email:</h3>
+            <p style="color: aliceblue;">GamemaniaSp@email.com</p>
+            <h3 style="color: aliceblue;">Endereço:</h3>
+            <p style="color: aliceblue;">Rua Boa Vista/SP - 451</p>
+            <h3 style="color: aliceblue;">Telefone:</h3>
+            <p style="color: aliceblue;">+55 (11) 9.4588-9852</p>
+            <h2 style="color: aliceblue;">Direitos Reservados</h2>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
