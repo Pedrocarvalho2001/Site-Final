@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GM - Xbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/letterg.ico">
+    <script type="text/javascript" src="../jquery/jquery-v3.6.0.min.js"></script>
+
+</head>
+<!---------------------------NavBar---------------------------------->
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fundo-nav">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/letterg.png" width="30" height="30" class="d-inlite-block align-top" alt="">
+            Game Mania
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="ninpage.html">Nintendo</a>
+                            <a class="dropdown-item" href="pspage.html">Playstation</a>
+                            <a class="dropdown-item" href="xboxpage.html">Xbox</a>
+                            <a class="dropdown-item" href="pcpage.html">Computadores</a>
+                        </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quem Somos</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+            <li class="nav-item">
+                <a class="btn btn-primary" href="../cadastro/login.html" role="button">Login</a>
+                <a class="btn btn-primary" href="../cadastro/formulario.html" role="button">Sign In</a>
+            </li>
+        </div>
+    </nav>
+
+    <!-------------------------------------Cabeçalho----------------------------------------->
+
+    <header>
+        <div class="texto-header">
+            <img style="margin-top: 1%;" width="210px" height="170px" src='imagens/gamemania2.png' />
+            <div id="slider"><img src="imagens/sonic.gif" width="50" height="50"></div>
+            <h1 style="color: rgb(246, 9, 9)">Game Mania</h1>
+            <p style="color: seashell; font-size: larger;">A maior loja de eletrônicos da grande São Paulo</p>
+        </div>
+
+        <img src="imagens/xboxbanner1.png" width="100%"><br>
+    </header>
+
+    <!-------------------------------Conteudo da Pagina----------------------------------------->
+    <main>
+        
+        <div class="texto-header">
+            <br>
+            <h1 style="color:red;">Consoles</h1>
+            <p style="color: seashell; font-size: larger;">Ultimas Novidades da Microsoft </p>
+
+            <div class="produtosm">
+                <img src="imagens/xboxseriesS.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Xbox Series S</p>
+                <h2 style="color: rgb(133, 246, 162)">R$ 2649,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/xboxseriesx.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Xbox Series X</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 5499,99</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/XboxOneX.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Xbox One X</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 2399,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+            <br><br><br>
+
+            <img src="imagens/xboxbanner2.jpg" width="75%">
+            <br><br><br><br>
+
+            <h1 style="color:red;">Promoção da Semana</h1>
+
+            <div class="produtoprincipal">
+                <img src="imagens/Xbox OS.jpg" height="450px" width="450px">
+                <p style="color: aliceblue; font-size: larger;">Xbox One S<br><del>de R$1800,00</del> Por</p>
+                <h2 style="color: rgb(133, 246, 162); font-size:50px;">R$ 999,99</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div><br><br>
+
+            <h1 style="color:red;">Acessórios</h1>
+            <p style="color: seashell; font-size: larger;">Controles, Jogos e Acessórios</p>
+
+            <div class="produtosm">
+                <img src="imagens/XboxControle.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;">Controle Xbox One</p>
+                <h2 style="color: rgb(133, 246, 162)">R$230,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/controle360.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Controle Xbox 360</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 120,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/fonexbox.png" height="200px" width="200px">
+                <p style="color: aliceblue;"> Fone HeadSet Xbox One</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 200,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div><br><br>
+
+            <div class="produtosm">
+                <img src="imagens/tecladoX1.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Teclado para Chat</p>
+                <h2 style="color: rgb(133, 246, 162)">R$ 70,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/xboxcarregador.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Xbox Play and Charge</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 50,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/kinectXone.png" height="200px" width="200px">
+                <p style="color: aliceblue;"> Kinect Xbox One</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 330,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div><br><br>
+
+            <div class="produtosm">
+                <img src="imagens/jogoXbox1.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Jog Rayman Legends</p>
+                <h2 style="color: rgb(133, 246, 162)">R$ 100,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/jogoXbox2.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Jogo Lucky's Tale</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 219,00</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div>
+
+            <div class="produtosm">
+                <img src="imagens/jogoXbox3.jpg" height="200px" width="200px">
+                <p style="color: aliceblue;"> Jogo GTA V</p>
+                <h2 style="color: rgb(133, 246, 162);">R$ 199,90</h2>
+                <button onclick="teste()">Comprar</button>
+                <button onclick="submitButtonStyle(this)" type="submit" class="botao">
+                    <span onclick="replaceword(this,'Adicionado!','Adicionado!');">Carrinho</span></button>
+            </div><br><br>
+
+        </div>
+
+    </main>
+
+    <!-------------------------------------Rodapé------------------------------------------->
+
+    <footer>
+        <div class="texto-header">
+
+            <img src="imagens/what.png" class="sitero">
+            <img src="imagens/book.png" class="sitero">
+            <img src="imagens/twi.png" class="sitero">
+            <img src="imagens/insta.png" class="sitero">
+            <img src="imagens/email.png" class="sitero">
+            <br><br>
+            <h3 style="color: aliceblue;">Email:</h3>
+            <p style="color: aliceblue;">GamemaniaSp@email.com</p>
+            <h3 style="color: aliceblue;">Endereço:</h3>
+            <p style="color: aliceblue;">Rua Boa Vista/SP - 451</p>
+            <h3 style="color: aliceblue;">Telefone:</h3>
+            <p style="color: aliceblue;">+55 (11) 9.4588-9852</p>
+            <h2 style="color: aliceblue;">Direitos Reservados</h2>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
